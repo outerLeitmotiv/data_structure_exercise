@@ -26,7 +26,7 @@ public class Lecture {
     public Student getStudentName (String name) { // return a student using his name, easier to use than having to always use the variable
         int check = -1; // initiate variable
         for (int i= 0; i<getStudents().size(); i++) { // navigate through the array of student of the lecture
-            if (getStudents().get(i).getName().equals(name)) { // compare the name found at the index with the name given in parameter
+            if (getStudents().get(i).getFirstName().equals(name)) { // compare the name found at the index with the name given in parameter
                 check = i; // passes the value of the index to the check variable
             }
         }
